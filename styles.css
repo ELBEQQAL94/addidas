@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  /* Main Color */
+  /* Main Font */
+  --mainFont: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--mainFont);
+  background-color: rgb(206, 9, 9);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========
+   HEADER
+   =========
+*/
+
+.main__header .nav {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.main__header .nav .hamburger {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main__header .logo {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+}
+
+.main__header .logo h2 {
+  text-transform: uppercase;
+}
+
+.main__header .logo img {
+  width: 100px;
+  object-fit: contain;
+}
+
+
+/* ===========
+   CAROUSEL
+   ===========
+*/
+
+main .carousel__container {
+  overflow: hidden;
+  height: 100vh;
+  width: 98vw;
+  position: relative;
+}
+
+.carousel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  display: flex;
+  margin-top: 4em;
+}
+
+.carousel .slide {
+  width: 100vw;
+  text-align: center;
+}
+
+.carousel .slide img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel .slide h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: -5rem;
+}
+
+.carousel .slide a {
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 7px 15px;
+  transition: background-color 0.5s linear;
+  border-radius: 10px;
+  margin-top: 2em;
+}
+
+.carousel .slide a:hover {
+  background-color: rgb(241, 228, 228);
+  color: black;
+}
+
+.arrow {
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 3rem;
+  top: 50%;
+  color: white;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.left__arrow {
+  left: 2rem;
+}
+
+.right__arrow {
+  right: 2rem;
+}

@@ -4,6 +4,6 @@
 ## TODO:
 ----
 
-* [ ] add repo
+* [x] add repo
 * [ ] add carousel
 * live demo: 
