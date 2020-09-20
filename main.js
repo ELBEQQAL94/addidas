@@ -9,7 +9,7 @@ function updateCarousel() {
 
 };
 
-leftBtn.addEventListener('click', () => {
+rightBtn.addEventListener('click', () => {
   current_slide--;
   if(current_slide < 0) {
     current_slide = SLIDES_COUNT - 1;
@@ -17,7 +17,7 @@ leftBtn.addEventListener('click', () => {
   updateCarousel();
 });
 
-rightBtn.addEventListener('click', () => {
+leftBtn.addEventListener('click', () => {
   current_slide++;
   if(current_slide > SLIDES_COUNT - 1) {
     current_slide = 0;
@@ -25,4 +25,7 @@ rightBtn.addEventListener('click', () => {
   updateCarousel();
 });
 
-
+function updateCarousel() {
+  carousel.style.transform = `translateX(${-current_slide * slides[0].offsetWidth}px)`;
+  document.body.style.background = slides[current_slide].getAttribute('data-bg');s
+}

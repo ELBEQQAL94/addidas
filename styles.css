@@ -15,7 +15,7 @@
 body {
   font-family: var(--mainFont);
   background-color: rgb(206, 9, 9);
-  color: white;
+  transition: background-color 0.5s ease-in-out;
 }
 
 a {
@@ -79,6 +79,7 @@ main .carousel__container {
   transform: translateX(0);
   display: flex;
   margin-top: 4em;
+  transition: transform 0.5s ease-in-out;
 }
 
 .carousel .slide {
@@ -95,7 +96,7 @@ main .carousel__container {
 .carousel .slide h2 {
   font-size: 3rem;
   text-transform: uppercase;
-  margin-top: -5rem;
+  margin-bottom: 15px;
 }
 
 .carousel .slide a {
@@ -105,7 +106,6 @@ main .carousel__container {
   padding: 7px 15px;
   transition: background-color 0.5s linear;
   border-radius: 10px;
-  margin-top: 2em;
 }
 
 .carousel .slide a:hover {
@@ -120,7 +120,7 @@ main .carousel__container {
   border: none;
   font-size: 3rem;
   top: 50%;
-  color: white;
+  color: black;
   cursor: pointer;
   transform: translateY(-50%);
 }
